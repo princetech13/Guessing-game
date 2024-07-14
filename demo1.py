@@ -18,21 +18,21 @@ def check_win(player, computer):
        
         else:
             print("Paper smashes Rock!  You lose")
-            score=score+1
+            
     elif player == "Paper" :
         if computer == "Rock":
             print("Paper smashes Rock! You won")
            
         else:
             print("Rock smashes Paper! You lose")
-        score=score+1
+    
     elif player == "Scissors" :
         if computer == "Paper" :
             print("Scissors cuts Paper! You won")
            
         else:
             print("Paper smashes Scissors! You lose")
-    score=score+1
+    
 output = get_choice()
 result = check_win(output["player"], output["computer"])
 print(result)
